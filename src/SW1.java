@@ -5,7 +5,7 @@ public class SW1 {
         int f=0,r=0,sum=0,ff=0,rr=0,maxlen=0;
         while(r<v.size()){
             sum+=v.get(r);
-            while(sum>k){
+            if(sum>k){
                 sum-=v.get(f);
                 f++;
             }
